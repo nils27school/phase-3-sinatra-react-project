@@ -6,6 +6,7 @@ class CreateCocktails < ActiveRecord::Migration[6.1]
       t.integer :spirit_id
       t.string :ingredients
       t.string :description
+      t.string :image
      
     end
   end

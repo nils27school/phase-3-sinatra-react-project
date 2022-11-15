@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2022_11_14_182227) do
     t.integer "spirit_id"
     t.string "ingredients"
     t.string "description"
+    t.string "image"
   end
 
   create_table "glasswares", force: :cascade do |t|

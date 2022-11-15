@@ -35,21 +35,24 @@ Cocktail.destroy_all
         glassware_id: rocks_glass.id,
         spirit_id: bourbon.id,
         ingredients: "Sugar, Angostura bitters, orange slice",
-        description: "A gentleman's bourbon based drink on the rocks.")
+        description: "A gentleman's bourbon based drink on the rocks.",
+        image: "Old_fashion.img")
 
         Cocktail.create(
         name: "Margarita",
         glassware_id: coupe.id,
         spirit_id: tequila.id,
         ingredients: "Lime Juice, sugar, triple sec",
-        description: "Perfect drink for the beach.")
+        description: "Perfect drink for the beach.",
+        image: "Margarita.img")
 
         Cocktail.create(
         name: "Cosmo",
         glassware_id: coupe.id,
         spirit_id: vodka.id,
         ingredients: "Cranberry juice, triple sec, lime juice",
-        description: "A refreshing pink drink.")
+        description: "A refreshing pink drink.",
+        image: "Cosmo.img")
 
 
         # t.string :glass_type,
