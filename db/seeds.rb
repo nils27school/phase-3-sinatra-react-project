@@ -4,32 +4,22 @@ puts "🌱 Seeding spices..."
 puts "Destroying glassware..."
 Glassware.destroy_all
 
-Glassware.create(
-    glass_type: "Rocks Glass"
-)
+rocks_glass = Glassware.create(glass_type: "Rocks Glass")
 
-Glassware.create(
-    glass_type: "Coupe"
-)
+coupe = Glassware.create(glass_type: "Coupe")
 
 
 # t.string :spirit_name,
 # t.integer :spirit_id
 
 puts "Destroying spirits..."
-Spirits.destroy_all
+Spirit.destroy_all
 
-Spirits.create(
-    spirit_name: "Bourbon",
-)
+bourbon = Spirit.create(spirit_name: "Bourbon",)
 
-Spirits.create(
-    spirit_name: "Tequila",
-)
+tequila = Spirit.create(spirit_name: "Tequila",)
 
-Spirits.create(
-    spirit_name: "Vodka",
-)
+vodka = Spirit.create(spirit_name: "Vodka",)
 
 
 # t.string :name,
@@ -42,22 +32,22 @@ Cocktail.destroy_all
 
     Cocktail.create(
         name: "Old Fashion",
-        glassware_id: 1,
-        spirit_id: 1,
+        glassware_id: rocks_glass.id,
+        spirit_id: bourbon.id,
         ingredients: "Sugar, Angostura bitters, orange slice",
         description: "A gentleman's bourbon based drink on the rocks.")
 
         Cocktail.create(
         name: "Margarita",
-        glassware_id: 2,
-        spirit_id: 2,
+        glassware_id: coupe.id,
+        spirit_id: tequila.id,
         ingredients: "Lime Juice, sugar, triple sec",
         description: "Perfect drink for the beach.")
 
         Cocktail.create(
         name: "Cosmo",
-        glassware_id: 2,
-        spirit_id: 3,
+        glassware_id: coupe.id,
+        spirit_id: vodka.id,
         ingredients: "Cranberry juice, triple sec, lime juice",
         description: "A refreshing pink drink.")
 
