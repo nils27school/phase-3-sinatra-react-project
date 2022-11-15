@@ -8,7 +8,13 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/cocktails" do
-    new_cocktail = Cocktail.create(name:params[:name], glassware_id:params[:glassware_id], spirit_id:params[:spirit_id], ingredients:params[:ingredients], description:params[:description])
+    new_cocktail = Cocktail.create(
+      name:params[:name], 
+      glassware_id:params[:glassware_id], 
+      spirit_id:params[:spirit_id], 
+      ingredients:params[:ingredients], 
+      description:params[:description]
+    )
     new_cocktail.to_json
   end
 
@@ -16,6 +22,16 @@ class ApplicationController < Sinatra::Base
     delete_cocktail = Cocktail.find(params[:id])
     delete_cocktail.destroy
     delete_cocktail.to_json
+  end
+
+  patch "/cocktails/:id" do
+    updated_cocktail = Cocktail.find(params[:id])
+    updated_cocktail.update(
+      name: params[:name],
+      ingredients: params[:ingredients],
+      description: params[:description]
+    )
+    updated_cocktail.to_json
   end
 
 
@@ -35,6 +51,11 @@ class ApplicationController < Sinatra::Base
   get "/glassware" do
     glassware = Glassware.all
     glassware.to_json
+  end
+
+  get "/glassware/:id" do
+    glassware_cocktails = Glassware.find(params[:id]).cocktails
+    glassware_cocktails.to_json
   end
 
 end
