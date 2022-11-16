@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2022_11_14_182227) do
 
   create_table "spirits", force: :cascade do |t|
     t.string "spirit_name"
+    t.string "description"
   end
 
 end
