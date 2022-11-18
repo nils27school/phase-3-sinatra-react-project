@@ -41,8 +41,8 @@ rum = Spirit.create(
 
 gin = Spirit.create(
     spirit_name: "Gin",
-    description: "Made from neutral grains such as rye, barley, wheat and corn, gin remains unaged, and is therefore clear, like vodka. The herbal and pine-like aroma of gin comes from the inclusion of botanical ingredients like juniper berries.")
-
+    description: "Made from neutral grains such as rye, barley, wheat and corn, gin remains unaged, and is therefore clear, like vodka.")
+    # The herbal and pine-like aroma of gin comes from the inclusion of botanical ingredients like juniper berries.
 brandy = Spirit.create(
     spirit_name: "Brandy",
     description: "Brandy is made with fermented fruit instead of grain.")
@@ -59,15 +59,15 @@ Cocktail.destroy_all
         name: "Old Fashion",
         glassware_id: rocks_glass.id,
         spirit_id: whiskey.id,
-        ingredients: "Sugar, Angostura bitters, orange slice",
+        ingredients: "Whiskey, Sugar, Angostura bitters, orange slice",
         description: "A gentleman's bourbon based drink on the rocks.",
-        image: "Old_fashion")
+        image: "Old_fashion.img")
 
     Cocktail.create(
         name: "Margarita",
         glassware_id: coupe.id,
         spirit_id: tequila.id,
-        ingredients: "Lime Juice, sugar, triple sec",
+        ingredients: "Tequila, Lime Juice, sugar, triple sec",
         description: "Perfect drink for the beach.",
         image: "Margarita")
 
@@ -75,7 +75,7 @@ Cocktail.destroy_all
         name: "Cosmo",
         glassware_id: coupe.id,
         spirit_id: vodka.id,
-        ingredients: "Cranberry juice, triple sec, lime juice",
+        ingredients: "Vodka, Cranberry juice, triple sec, lime juice",
         description: "A refreshing pink drink.",
         image: "Cosmo")
 
@@ -83,7 +83,7 @@ Cocktail.destroy_all
             name: "Whiskey Sour",
             glassware_id: collins_glass.id,
             spirit_id: whiskey.id,
-            ingredients: "Lemon or lime juice, simple syrup",
+            ingredients: "Whiskey, Lemon or lime juice, simple syrup",
             description: "A sour whiskey drink",
             image: "Whiskey_sour")
 
@@ -91,7 +91,7 @@ Cocktail.destroy_all
                 name: "Mint Julep",
                 glassware_id: collins_glass.id,
                 spirit_id: whiskey.id,
-                ingredients: "Muddled mint leaves and sugar",
+                ingredients: "Whiskey, Muddled mint leaves and sugar",
                 description: "A refreshing mint drink",
                 image: "Mint_julep")
 
@@ -99,7 +99,7 @@ Cocktail.destroy_all
                     name: "French 75",
                     glassware_id: coupe.id,
                     spirit_id: brandy.id,
-                    ingredients: "Lemon juice, simple syrup, and champagne",
+                    ingredients: "Brandy, Lemon juice, simple syrup, and champagne",
                     description: "A class, strong drink, with elegance",
                     image: "French_75")
 
@@ -107,7 +107,7 @@ Cocktail.destroy_all
         name: "Martini",
         glassware_id: martini_glass.id,
         spirit_id: vodka.id,
-        ingredients: "Dry vermouth and bitters, garnish with olive or lemon twist",
+        ingredients: "Vodka, Dry vermouth and bitters, garnish with olive or lemon twist",
         description: "A drink for James Bond",
         image: "Martini")
                         
@@ -115,7 +115,7 @@ Cocktail.destroy_all
         name: "Mojito",
         glassware_id: collins_glass.id,
         spirit_id: rum.id,
-        ingredients: "Muddled mint, sugar, lime, soda water",
+        ingredients: "Rum, Muddled mint, sugar, lime, soda water",
         description: "Great drink for a summer day, refreshing",
         image: "Mojito")
     
@@ -123,7 +123,7 @@ Cocktail.destroy_all
             name: "Dark and Stormy",
             glassware_id: collins_glass.id,
             spirit_id: rum.id,
-            ingredients: "Ginger beer and bitters",
+            ingredients: "Rum, Ginger beer and bitters",
             description: "Simple, warm, refreshing",
             image: "Dark_and_stormy")
 
@@ -131,7 +131,7 @@ Cocktail.destroy_all
                 name: "Gin and Tonic",
                 glassware_id: collins_glass.id,
                 spirit_id: gin.id,
-                ingredients: "Lime and tonic water",
+                ingredients: "Gin, Lime and tonic water",
                 description: "A simple, floral, and refreshing beverage",
                 image: "Gin_and_tonic")
 
@@ -139,7 +139,7 @@ Cocktail.destroy_all
                     name: "Paloma",
                     glassware_id: collins_glass.id,
                     spirit_id: tequila.id,
-                    ingredients: "Grapefruit juice and lime juice",
+                    ingredients: "Tequila, Grapefruit juice and lime juice",
                     description: "Refreshing and fruity drink",
                     image: "Paloma")
         # t.string :glass_type,
