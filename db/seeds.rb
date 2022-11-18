@@ -61,7 +61,7 @@ Cocktail.destroy_all
         spirit_id: whiskey.id,
         ingredients: "Sugar, Angostura bitters, orange slice",
         description: "A gentleman's bourbon based drink on the rocks.",
-        image: "Old_fashion.img")
+        image: "Old_fashion")
 
     Cocktail.create(
         name: "Margarita",
@@ -69,7 +69,7 @@ Cocktail.destroy_all
         spirit_id: tequila.id,
         ingredients: "Lime Juice, sugar, triple sec",
         description: "Perfect drink for the beach.",
-        image: "Margarita.img")
+        image: "Margarita")
 
     Cocktail.create(
         name: "Cosmo",
@@ -77,7 +77,7 @@ Cocktail.destroy_all
         spirit_id: vodka.id,
         ingredients: "Cranberry juice, triple sec, lime juice",
         description: "A refreshing pink drink.",
-        image: "Cosmo.img")
+        image: "Cosmo")
 
     Cocktail.create(
             name: "Whiskey Sour",
@@ -85,7 +85,7 @@ Cocktail.destroy_all
             spirit_id: whiskey.id,
             ingredients: "Lemon or lime juice, simple syrup",
             description: "A sour whiskey drink",
-            image: "Whiskey_sour.img")
+            image: "Whiskey_sour")
 
     Cocktail.create(
                 name: "Mint Julep",
@@ -93,7 +93,7 @@ Cocktail.destroy_all
                 spirit_id: whiskey.id,
                 ingredients: "Muddled mint leaves and sugar",
                 description: "A refreshing mint drink",
-                image: "Mint_julep.img")
+                image: "Mint_julep")
 
     Cocktail.create(
                     name: "French 75",
@@ -101,7 +101,7 @@ Cocktail.destroy_all
                     spirit_id: brandy.id,
                     ingredients: "Lemon juice, simple syrup, and champagne",
                     description: "A class, strong drink, with elegance",
-                    image: "French_75.img")
+                    image: "French_75")
 
     Cocktail.create(
         name: "Martini",
@@ -109,7 +109,7 @@ Cocktail.destroy_all
         spirit_id: vodka.id,
         ingredients: "Dry vermouth and bitters, garnish with olive or lemon twist",
         description: "A drink for James Bond",
-        image: "Martini.img")
+        image: "Martini")
                         
     Cocktail.create(
         name: "Mojito",
@@ -117,7 +117,7 @@ Cocktail.destroy_all
         spirit_id: rum.id,
         ingredients: "Muddled mint, sugar, lime, soda water",
         description: "Great drink for a summer day, refreshing",
-        image: "Mojito.img")
+        image: "Mojito")
     
         Cocktail.create(
             name: "Dark and Stormy",
@@ -125,7 +125,7 @@ Cocktail.destroy_all
             spirit_id: rum.id,
             ingredients: "Ginger beer and bitters",
             description: "Simple, warm, refreshing",
-            image: "Dark_and_stormy.img")
+            image: "Dark_and_stormy")
 
             Cocktail.create(
                 name: "Gin and Tonic",
@@ -133,7 +133,7 @@ Cocktail.destroy_all
                 spirit_id: gin.id,
                 ingredients: "Lime and tonic water",
                 description: "A simple, floral, and refreshing beverage",
-                image: "Gin_and_tonic.img")
+                image: "Gin_and_tonic")
 
                 Cocktail.create(
                     name: "Paloma",
@@ -141,7 +141,7 @@ Cocktail.destroy_all
                     spirit_id: tequila.id,
                     ingredients: "Grapefruit juice and lime juice",
                     description: "Refreshing and fruity drink",
-                    image: "Paloma.img")
+                    image: "Paloma")
         # t.string :glass_type,
         # t.integer :glass_id
 
