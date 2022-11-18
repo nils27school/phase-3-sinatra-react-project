@@ -4,17 +4,17 @@ puts "🌱 Seeding spices..."
 puts "Destroying glassware..."
 Glassware.destroy_all
 
-rocks_glass = Glassware.create(glass_type: "Rocks Glass")
+rocks_glass = Glassware.create(glass_type: "Rocks Glass", image: "Rocks_Glass")
 
-coupe = Glassware.create(glass_type: "Coupe")
+coupe = Glassware.create(glass_type: "Coupe", image: "Coupe")
 
-collins_glass = Glassware.create(glass_type: "Collins Glass")
+collins_glass = Glassware.create(glass_type: "Collins Glass", image: "Collins_Glass")
 
-martini_glass = Glassware.create(glass_type: "Martini Glass")
+martini_glass = Glassware.create(glass_type: "Martini Glass", image: "Martini_Glass")
 
-highball_glass = Glassware.create(glass_type: "Highball Glass")
+highball_glass = Glassware.create(glass_type: "Highball Glass", image: "Highball_glass")
 
-shot_glass = Glassware.create(glass_type: "Shot Glass")
+shot_glass = Glassware.create(glass_type: "Shot Glass", image:"Shot_Glass")
 
 
 # t.string :spirit_name,
@@ -61,7 +61,7 @@ Cocktail.destroy_all
         spirit_id: whiskey.id,
         ingredients: "Whiskey, Sugar, Angostura bitters, orange slice",
         description: "A gentleman's bourbon based drink on the rocks.",
-        image: "Old_fashion.jpg")
+        image: "Old_fashion")
 
     Cocktail.create(
         name: "Margarita",
@@ -69,7 +69,7 @@ Cocktail.destroy_all
         spirit_id: tequila.id,
         ingredients: "Tequila, Lime Juice, sugar, triple sec",
         description: "Perfect drink for the beach.",
-        image: "Margarita.img")
+        image: "MargaritaHighball")
 
     Cocktail.create(
         name: "Cosmo",
@@ -77,7 +77,7 @@ Cocktail.destroy_all
         spirit_id: vodka.id,
         ingredients: "Vodka, Cranberry juice, triple sec, lime juice",
         description: "A refreshing pink drink.",
-        image: "Cosmo.img")
+        image: "Cosmo")
 
     Cocktail.create(
             name: "Whiskey Sour",
@@ -93,7 +93,7 @@ Cocktail.destroy_all
                 spirit_id: whiskey.id,
                 ingredients: "Whiskey, Muddled mint leaves and sugar",
                 description: "A refreshing mint drink",
-                image: "Mint_julep.img")
+                image: "Mint_julep")
 
     Cocktail.create(
                     name: "French 75",

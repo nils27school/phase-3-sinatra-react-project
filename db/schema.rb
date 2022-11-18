@@ -23,11 +23,13 @@ ActiveRecord::Schema.define(version: 2022_11_14_182227) do
 
   create_table "glasswares", force: :cascade do |t|
     t.string "glass_type"
+    t.string "image"
   end
 
   create_table "spirits", force: :cascade do |t|
     t.string "spirit_name"
     t.string "description"
+    t.string "image"
   end
 
 end
